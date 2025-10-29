@@ -2,7 +2,7 @@
 
 ## Description
 
-A web application demonstrating security measures using HTML, CSS, JavaScript, Node.js, and MongoDB.
+backend security measure implementation
 
 ## Features
 

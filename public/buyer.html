@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buyer Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      window.onload = () => {
+        const token = localStorage.getItem("token");
+        if (!token) return (window.location.href = "/login.html");
+
+        try {
+          const payload = JSON.parse(atob(token.split(".")[1]));
+          if (payload.role !== "buyer") {
+            alert("Access denied. Buyers only.");
+           
+            window.location.href = "/login.html";
+          }
+        } catch {
+         
+          window.location.href = "/login.html";
+        }
+      };
+
+      function logout() {
+        localStorage.removeItem("token");
+        window.location.href = "/login.html";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Welcome, Buyer</h1>
+    <p>Browse and purchase items. View your order history.</p>
+    <button onclick="logout()">Logout</button>
+  </body>
+</html>

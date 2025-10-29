@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+   
+      window.onload = () => {
+        const token = localStorage.getItem("token");
+
+        if (!token) {
+          window.location.href = "/login.html";
+          return;
+        }
+
+        try {
+          const payload = JSON.parse(atob(token.split(".")[1]));
+          if (payload.role !== "admin") {
+            alert("Access denied. Admins only.");
+            window.location.href = "/login.html";
+          }
+        } catch (error) {
+          console.error("Token error:", error);
+          window.location.href = "/login.html";
+        }
+      };
+
+      // Logout function
+      function logout() {
+        localStorage.removeItem("token");
+        window.location.href = "/login.html";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Welcome, Admin</h1>
+    <p>Manage users, roles, and view system activity.</p>
+    <button onclick="logout()">Logout</button>
+  </body>
+</html>

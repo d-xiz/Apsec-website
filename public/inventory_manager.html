@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inventory Manager Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      window.onload = () => {
+        const token = localStorage.getItem("token");
+        if (!token) return (window.location.href = "/login.html");
+
+        try {
+          const payload = JSON.parse(atob(token.split(".")[1]));
+          if (payload.role !== "inventorymanager") {
+            alert("Access denied. Inventory Managers only.");
+           
+            window.location.href = "/login.html";
+          }
+        } catch {
+        
+          window.location.href = "/login.html";
+        }
+      };
+
+      function logout() {
+        localStorage.removeItem("token");
+        window.location.href = "/login.html";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Welcome, Inventory Manager</h1>
+    <p>Update stock, manage product details, and track inventory tasks.</p>
+    <button onclick="logout()">Logout</button>
+  </body>
+</html>

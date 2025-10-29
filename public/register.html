@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Register</h2>
+    <form method="POST">
+      <input type="text" name="name" placeholder="Name" required /><br />
+      <input type="email" name="email" placeholder="Email" required /><br />
+      <input
+        type="password"
+        name="password"
+        placeholder="Password"
+        required
+      /><br />
+      <select name="role" required>
+        <option value="admin">admin</option>
+        <option value="ShopOwner">Shop Owner</option>
+        <option value="buyer">buyer</option>
+        <option value="inventorymanager">Inventory Manager</option></select
+      ><br />
+      <button type="submit">Register</button>
+    </form>
+    <a href="/login.html">Already have an account? Login</a>
+    <script>
+      const registerForm = document.querySelector("form");
+      registerForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const formData = new FormData(registerForm);
+
+        const role = formData.get("role");
+        const endpoint = `/api/auth/register-${role.toLowerCase()}`;
+        const data = {
+          name: formData.get("name"),
+          email: formData.get("email"),
+          password: formData.get("password"),
+        };
+
+        const res = await fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
+
+        const result = await res.json();
+
+        if (res.ok) {
+          alert("Registration successful! Please login.");
+          window.location.href = "/login.html"; 
+        } else {
+          alert(result.message || "Registration failed.");
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1411 @@
+{
+	"info": {
+		"_postman_id": "6c3e9d1f-af72-448f-bdb0-068c29ce9797",
+		"name": "Apsec prjct",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40127208"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "login Admin using name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishAdmin\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Admin using email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishAdmin@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Admin using wrong name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Danish\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Admin using wrong email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Danish@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Admin using wrong password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishAdmin@gmail.com\",\r\n  \"password\": \"12345\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "inventorymanager",
+							"path": [
+								"api",
+								"auth",
+								"login-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Buyer using name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishBuyer\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-buyer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-buyer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Buyer using email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishBuyer@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-buyer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-buyer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Buyer using wrong name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Danish\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-buyer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-buyer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Buyer using wrong email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Danish2gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-buyer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-buyer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Buyer using wrong password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishBuyer\",\r\n  \"password\": \"456\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-buyer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-buyer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login shop owner using name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishOwner\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-shopowner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-shopowner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login shop owner using email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishOwner@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-shopowner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-shopowner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login shop owner using wrong name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Danish\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-shopowner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-shopowner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login shop owner using wrong email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"sss@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-shopowner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-shopowner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login shop owner using wrong password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishOwner\",\r\n  \"password\": \"12345\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-shopowner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-shopowner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Inventory Manager using name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishInventory\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-inventorymanager",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-inventorymanager"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Inventory Manager using email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishInventory@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-inventorymanager",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-inventorymanager"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Inventory Manager using wrong name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Danish\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-inventorymanager",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-inventorymanager"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Inventory Manager using wrong email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Danish@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-inventorymanager",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-inventorymanager"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Inventory Manager using wrong password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishInventory\",\r\n  \"password\": \"12344\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login-inventorymanager",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login-inventorymanager"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Protected routes",
+			"item": [
+				{
+					"name": "admin dashboard",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJuYW1lIjoiRGFuaXNoQWRtaW4iLCJlbWFpbCI6IkRhbmlzaEFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTc0ODQ0MTEwNiwiZXhwIjoxNzQ4NzAwMzA2fQ.UlygecximSBwKCW1z5yoqSmkIk4XSlo66KexLyHbe_M",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/admin/dashboard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin",
+								"dashboard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin dashboard token from different role",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYnV5ZXIiLCJuYW1lIjoiRGFuaXNoQnV5ZXIiLCJlbWFpbCI6IkRhbmlzaEJ1eWVyQGdtYWlsLmNvbSIsImlhdCI6MTc0ODQzODUzNywiZXhwIjoxNzQ4Njk3NzM3fQ.GOwplkL9hDFrOBS9RkY5FciUTwkJePK7AZyUottsZ9w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/admin/dashboard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin",
+								"dashboard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin dashboard wrong token",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer wrong",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/admin/dashboard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin",
+								"dashboard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin dashboard w/o token",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/admin/dashboard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin",
+								"dashboard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buyer orders",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYnV5ZXIiLCJuYW1lIjoiRGFuaXNoQnV5ZXIiLCJlbWFpbCI6IkRhbmlzaEJ1eWVyQGdtYWlsLmNvbSIsImlhdCI6MTc0ODQzODUzNywiZXhwIjoxNzQ4Njk3NzM3fQ.GOwplkL9hDFrOBS9RkY5FciUTwkJePK7AZyUottsZ9w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/buyer/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"buyer",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buyer orders token from different role",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiU2hvcE93bmVyIiwibmFtZSI6IkRhbmlzaE93bmVyIiwiZW1haWwiOiJEYW5pc2hPd25lckBnbWFpbC5jb20iLCJpYXQiOjE3NDg0MzkzMTksImV4cCI6MTc0ODY5ODUxOX0.13W00aacgT8c5iBjM9iK-WRzIS0oM3HcHpV2B7BMusc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/buyer/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"buyer",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buyer orders wrong token",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer wrong",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/buyer/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"buyer",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buyer orders w/o token",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/buyer/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"buyer",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "shop owner products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiU2hvcE93bmVyIiwibmFtZSI6IkRhbmlzaE93bmVyIiwiZW1haWwiOiJEYW5pc2hPd25lckBnbWFpbC5jb20iLCJpYXQiOjE3NDg0MzkzMTksImV4cCI6MTc0ODY5ODUxOX0.13W00aacgT8c5iBjM9iK-WRzIS0oM3HcHpV2B7BMusc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/shopowner/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"shopowner",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "shop owner products token from diffrent role",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYnV5ZXIiLCJuYW1lIjoiRGFuaXNoQnV5ZXIiLCJlbWFpbCI6IkRhbmlzaEJ1eWVyQGdtYWlsLmNvbSIsImlhdCI6MTc0ODQzODUzNywiZXhwIjoxNzQ4Njk3NzM3fQ.GOwplkL9hDFrOBS9RkY5FciUTwkJePK7AZyUottsZ9w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/shopowner/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"shopowner",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "shop owner products wrong token",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer wrong",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/shopowner/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"shopowner",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "shop owner products w/o token",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/shopowner/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"shopowner",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inventory manager tasks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiaW52ZW50b3J5bWFuYWdlciIsIm5hbWUiOiJEYW5pc2hJbnZlbnRvcnkiLCJlbWFpbCI6IkRhbmlzaEludmVudG9yeUBnbWFpbC5jb20iLCJpYXQiOjE3NDg0NDAxMTMsImV4cCI6MTc0ODY5OTMxM30.d6vV4DrQ0XItrPB3e7tb0_iDvVmD5P673A9s846UncU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/inventorymanager/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"inventorymanager",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inventory manager tasks token from different role",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYnV5ZXIiLCJuYW1lIjoiRGFuaXNoQnV5ZXIiLCJlbWFpbCI6IkRhbmlzaEJ1eWVyQGdtYWlsLmNvbSIsImlhdCI6MTc0ODQzODUzNywiZXhwIjoxNzQ4Njk3NzM3fQ.GOwplkL9hDFrOBS9RkY5FciUTwkJePK7AZyUottsZ9w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/inventorymanager/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"inventorymanager",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inventory manager tasks wrong token",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer wrong",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/inventorymanager/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"inventorymanager",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inventory manager tasks w/o token",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/inventorymanager/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"inventorymanager",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Registration",
+			"item": [
+				{
+					"name": "Register new admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishAdmin\",\r\n  \"email\": \"DanishAdmin@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register-admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register with duplicate name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishAdmin\",\r\n  \"email\": \"Danish@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register-admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register with duplicate email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Danish\",\r\n  \"email\": \"DanishAdmin@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register-admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register new Buyer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishBuyer\",\r\n  \"email\": \"DanishBuyer@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register-buyer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register-buyer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register with duplicate name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishBuyer\",\r\n  \"email\": \"Danish@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register-buyer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register-buyer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register with duplicate email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Danish\",\r\n  \"email\": \"DanishBuyer@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register-buyer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register-buyer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register new Shop Owner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishOwner\",\r\n  \"email\": \"DanishOwner@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register-shopowner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register-shopowner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register with duplicate name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishOwner\",\r\n  \"email\": \"Danish@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register-shopowner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register-shopowner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register with duplicate email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Danish\",\r\n  \"email\": \"DanishOwner@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register-shopowner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register-shopowner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register new Inventory Manager",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishInventory\",\r\n  \"email\": \"DanishInventory@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register-inventorymanager",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register-inventorymanager"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register with duplicate name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DanishInventory\",\r\n  \"email\": \"Danish@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register-inventorymanager",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register-inventorymanager"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register with duplicate email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Danish\",\r\n  \"email\": \"DanishInventory@gmail.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register-inventorymanager",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register-inventorymanager"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

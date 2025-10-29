@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Login</h2>
+    <form method="POST">
+      <input type="text" name="name" placeholder="Name/Email" required /><br />
+      <input
+        type="password"
+        name="password"
+        placeholder="Password"
+        required
+      /><br />
+      <select name="role" required>
+        <option value="admin">admin</option>
+        <option value="ShopOwner">Shop Owner</option>
+        <option value="buyer">buyer</option>
+        <option value="inventorymanager">Inventory Manager</option></select
+      ><br />
+      <button type="submit">Login</button>
+    </form>
+
+    <p>Don't have an account? <a href="/register.html">Register here</a></p>
+    <script>
+      const loginForm = document.querySelector("form");
+      loginForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const formData = new FormData(loginForm);
+        const role = formData.get("role");
+        const endpoint = `/api/auth/login-${role.toLowerCase()}`;
+        const data = {
+          name: formData.get("name"),
+          password: formData.get("password"),
+        };
+
+        const res = await fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
+
+        const result = await res.json();
+
+        if (res.ok) {
+          localStorage.setItem("token", result.token);
+
+          switch (result.role.toLowerCase()) {
+            case "admin":
+              window.location.href = "/admin.html";
+              break;
+            case "shopowner":
+              window.location.href = "/shopowner.html";
+              break;
+            case "buyer":
+              window.location.href = "/buyer.html";
+              break;
+            case "inventorymanager":
+              window.location.href = "/inventorymanager.html";
+              break;
+            default:
+              alert("Unknown role");
+          }
+        } else {
+          alert(result.message);
+        }
+      });
+    </script>
+  </body>
+</html>
